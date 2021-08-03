@@ -1,0 +1,32 @@
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  publish-to-npm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source code
+        uses: actions/checkout@v2
+        with:
+          # pulls all commits and tags (needed for lerna / semantic release to correctly version)
+          fetch-depth: 0
+
+      - name: Set node version
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.16.0
+
+      - name: Configure Git CI User
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@users.noreply.github.com"
+
+      - name: Configure NPM
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
+
+      - name: Publish (canary)
+        run: |
+          yarn run lerna publish from-git --npm-tag canary --yes
