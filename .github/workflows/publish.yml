@@ -1,8 +1,10 @@
 name: "Publish (canary)"
+
 on:
   push:
-    branches:
-      - "canary"
+    tags:
+      - 'v*.canary*'
+
 
 jobs:
   publish-to-npm:
