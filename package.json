@@ -4,8 +4,12 @@
   "description": "This is a test repo for lerna GHA",
   "main": "index.js",
   "scripts": {
+    "lerna": "lerna",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
 }
