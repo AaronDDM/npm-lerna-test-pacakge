@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - "main"
+      - "canary"
 
 jobs:
   publish-to-npm:
@@ -29,4 +29,4 @@ jobs:
 
       - name: Publish (canary)
         run: |
-          yarn run lerna publish from-git --npm-tag canary --yes
+          yarn run lerna publish from-git --dist-tag canary --yes
