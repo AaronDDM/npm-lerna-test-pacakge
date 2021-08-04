@@ -1,6 +1,6 @@
 {
   "name": "aarondm-test-common",
-  "version": "2.0.2-canary.11",
+  "version": "2.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
