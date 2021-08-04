@@ -10,8 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^16.4.11",
-    "aarondm-test-common": "latest",
-    "typescript": "^4.3.5"
+    "aarondm-test-common": "latest"
   }
 }

@@ -10,21 +10,21 @@
   },
   "scripts": {
     "lerna": "lerna",
-    "build": "lerna run build",
+    "build": "lerna run build --stream",
     "release:canary": "lerna version prerelease --no-private",
     "release:stable": "lerna version --force-publish --no-private",
-    "prerelease:stable": "yarn build",
-    "prerelease:canary": "yarn build",
+    "prerelease:stable": "npm run build",
+    "prerelease:canary": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "conventional-changelog-cli": "^2.1.1",
-    "lerna": "^4.0.0"
-  },
-  "dependencies": {
-    "esbuild": "^0.12.17"
+    "lerna": "^4.0.0",
+    "esbuild": "^0.12.17",
+    "typescript": "^4.3.5",
+    "@types/node": "^16.4.11"
   },
   "workspaces": [
     "packages/*"

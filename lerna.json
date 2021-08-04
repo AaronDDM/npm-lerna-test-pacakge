@@ -5,6 +5,7 @@
   "version": "2.0.2",
   "preid": "canary",
   "useWorkspaces": true,
+  "npmClient": "npm",
   "command": {
     "version": {
       "allowBranch": "main"
