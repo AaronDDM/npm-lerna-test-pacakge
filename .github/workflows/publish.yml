@@ -29,6 +29,6 @@ jobs:
 
       - name: Publish (canary)
         run: |
-          yarn run lerna publish from-git --dist-tag canary --canary --preid canary --yes
+          yarn run lerna publish from-git --no-verify-access --dist-tag canary --canary --preid canary --yes
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
