@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/AaronDDM/npm-lerna-test-pacakge/compare/v2.0.0-canary.0...v2.0.0) (2021-08-04)
+
+
+### Features
+
+* Implemented a major change ([f33b1a8](https://github.com/AaronDDM/npm-lerna-test-pacakge/commit/f33b1a86e07d49d0a7a61c1302c6d3108112b1be))
+
+
+### BREAKING CHANGES
+
+* Introducing a breaking change
+
+
+
+
+
 # [2.0.0-canary.0](https://github.com/AaronDDM/npm-lerna-test-pacakge/compare/v1.1.0-canary.1...v2.0.0-canary.0) (2021-08-04)
 
 

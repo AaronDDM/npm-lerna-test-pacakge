@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/AaronDDM/npm-lerna-test-pacakge/compare/v2.0.0-canary.0...v2.0.0) (2021-08-04)
+
+**Note:** Version bump only for package aarondm-test-package-1
+
+
+
+
+
 # [2.0.0-canary.0](https://github.com/AaronDDM/npm-lerna-test-pacakge/compare/v1.1.0-canary.1...v2.0.0-canary.0) (2021-08-04)
 
 
