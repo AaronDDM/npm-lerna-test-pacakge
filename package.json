@@ -25,5 +25,8 @@
   },
   "dependencies": {
     "esbuild": "^0.12.17"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
