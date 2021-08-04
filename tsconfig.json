@@ -14,20 +14,11 @@
         "allowJs": false,
         "checkJs": false,
         "noEmit": true,
-        "types": [
-            "svelte",
-            "jest",
-            "dom"
-        ],
         "baseUrl": ".",
         "strict": true,
         "skipLibCheck": true,
         "resolveJsonModule": true
     },
-    "include": [
-        "commons/**/*",
-        "packages/**/*"
-    ],
     "exclude": [
         "node_modules/**/*",
         "**/node_modules/**/*",

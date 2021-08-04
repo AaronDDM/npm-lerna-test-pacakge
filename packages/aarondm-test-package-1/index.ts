@@ -1,4 +1,4 @@
-import { SOME_CONST } from "commons/import";
+import { SOME_CONST } from "commons/src/import";
 
 console.log("Major refactor");
 console.log("Testing without conventional commits");
