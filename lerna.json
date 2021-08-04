@@ -3,7 +3,7 @@
     "packages/*",
     "commons/*"
   ],
-  "version": "2.0.2-canary.6",
+  "version": "2.0.2-canary.7",
   "preid": "canary",
   "command": {
     "version": {
