@@ -1,6 +1,5 @@
 {
   "name": "aarondm-test-common",
-  "private": true,
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
