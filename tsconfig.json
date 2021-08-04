@@ -1,0 +1,44 @@
+{
+    "compilerOptions": {
+        "moduleResolution": "node",
+        "lib": [
+            "esnext",
+            "dom",
+            "dom.Iterable"
+        ],
+        "target": "esnext",
+        "importsNotUsedAsValues": "error",
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "allowJs": false,
+        "checkJs": false,
+        "noEmit": true,
+        "types": [
+            "svelte",
+            "jest",
+            "dom",
+            "cypress"
+        ],
+        "baseUrl": ".",
+        "rootDirs": [
+            "packages", "commons"
+        ],
+        "paths": {
+            "@commons*": [
+                "./commons/*"
+            ]
+        },
+        "strict": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true
+    },
+    "include": [
+        "commons/**/*",
+        "packages/**/*"
+    ],
+    "exclude": [
+        "node_modules/**/*",
+        "**/node_modules/**/*",
+    ]
+}
