@@ -10,7 +10,8 @@
   },
   "scripts": {
     "lerna": "lerna",
-    "release": "lerna version",
+    "release:canary": "lerna version prerelease",
+    "release:stable": "lerna version",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
