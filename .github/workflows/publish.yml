@@ -1,11 +1,10 @@
-name: "Publish (canary)"
+name: "Publish"
 
 on:
   push:
     tags:
       - 'v*'
-
-
+      
 jobs:
   publish-to-npm:
     runs-on: ubuntu-latest

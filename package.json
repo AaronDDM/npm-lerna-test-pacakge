@@ -10,14 +10,14 @@
   },
   "scripts": {
     "lerna": "lerna",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "changelog": "lerna-changelog"
+    "release:canary": "lerna version --conventional-commits --conventional-prerelease",
+    "release:stable": "lerna version --conventional-commits --conventional-graduate --create-release github",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "conventional-changelog-cli": "^2.1.1",
-    "lerna": "^4.0.0",
-    "lerna-changelog": "^1.0.1"
+    "lerna": "^4.0.0"
   }
 }
