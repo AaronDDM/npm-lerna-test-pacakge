@@ -32,4 +32,4 @@ jobs:
 
       - name: Publish (canary)
         run: |
-          yarn run lerna publish from-git --dist-tag canary --yes
+          yarn run lerna publish from-git --dist-tag canary --canary --preid canary --yes

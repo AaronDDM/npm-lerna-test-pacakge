@@ -4,13 +4,19 @@
   "private": true,
   "description": "This is a test repo for lerna GHA",
   "main": "index.js",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/AaronDDM/npm-lerna-test-pacakge"
+  },
   "scripts": {
     "lerna": "lerna",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "changelog": "lerna-changelog"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "lerna-changelog": "^1.0.1"
   }
 }
