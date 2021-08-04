@@ -3,7 +3,7 @@ name: "Publish (canary)"
 on:
   push:
     tags:
-      - 'v*-canary*'
+      - 'v*'
 
 
 jobs:
@@ -28,7 +28,15 @@ jobs:
           git config --global user.email "github-actions@users.noreply.github.com"
 
       - name: Publish (canary)
+        if: contains(github.ref, 'canary') == true
         run: |
           yarn run lerna publish from-git --no-verify-access --dist-tag canary --canary --preid canary --yes
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+
+      - name: Publish (stable)
+        if: contains(github.ref, 'canary') == false
+        run: |
+          yarn run lerna publish from-git --no-verify-access --yes
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
