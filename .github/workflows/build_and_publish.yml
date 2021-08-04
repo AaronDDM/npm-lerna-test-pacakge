@@ -38,3 +38,17 @@ jobs:
         with:
           path: ./*
           key: ${{ github.sha }}
+
+      - name: Publish (canary)
+        if: startsWith(github.ref, 'refs/tags/v') && `contains(github.ref, 'canary') == true
+        run: |
+          yarn run lerna changed && yarn run lerna publish from-git --no-verify-access --dist-tag canary --canary --preid canary --yes
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Publish (stable)
+        if: startsWith(github.ref, 'refs/tags/v') && contains(github.ref, 'canary') == false
+        run: |
+          yarn run lerna changed && yarn run lerna publish from-git --no-verify-access --yes
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
