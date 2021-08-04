@@ -1,6 +1,6 @@
 {
   "name": "aarondm-test-package-2",
-  "version": "2.0.4-canary.1",
+  "version": "2.0.5-canary.0",
   "description": "",
   "main": "index.js",
   "files": [
@@ -14,6 +14,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aaronddm-core": "^2.0.4-canary.1"
+    "aaronddm-core": "^2.0.5-canary.0"
   }
 }
