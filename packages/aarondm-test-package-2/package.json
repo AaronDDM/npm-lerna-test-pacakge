@@ -2,12 +2,13 @@
   "name": "aarondm-test-package-2",
   "version": "2.0.3-canary.7",
   "description": "",
-  "main": "dist/index.js",
+  "main": "index.js",
   "files": [
-    "dist"
+    "index.js",
+    "index.js.map"
   ],
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --minify --sourcemap --outfile=dist/index.js",
+    "build": "esbuild src/index.ts --bundle --minify --sourcemap --outfile=index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
