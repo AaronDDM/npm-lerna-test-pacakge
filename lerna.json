@@ -10,5 +10,8 @@
     "version": {
       "allowBranch": "main"
     }
+  },
+  "publishConfig": {
+    "directory": "dist"
   }
 }
