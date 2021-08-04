@@ -3,6 +3,9 @@
   "version": "2.0.3-canary.5",
   "description": "",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "esbuild src/index.ts --bundle --minify --sourcemap --outfile=dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
