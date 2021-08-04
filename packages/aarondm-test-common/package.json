@@ -1,13 +1,19 @@
 {
   "name": "aarondm-test-common",
   "private": true,
-  "version": "2.0.2-canary.8",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild index.ts --bundle --outfile=index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
