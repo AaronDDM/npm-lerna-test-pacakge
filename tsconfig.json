@@ -13,11 +13,17 @@
         "forceConsistentCasingInFileNames": true,
         "allowJs": false,
         "checkJs": false,
-        "noEmit": true,
-        "baseUrl": ".",
+        "noEmit": false,
+        "baseUrl": "./",
         "strict": true,
         "skipLibCheck": true,
-        "resolveJsonModule": true
+        "resolveJsonModule": true,
+        "declaration": true,
+        "paths": {
+            "aarondm-test-package-1/*": ["packages/aarondm-test-package-1/src/*"],
+            "aarondm-test-package-2/*": ["packages/aarondm-test-package-2/src/*"],
+            "aarondm-test-common/*": ["shared/aarondm-test-common/src/*"]
+        }
     },
     "exclude": [
         "node_modules/**/*",

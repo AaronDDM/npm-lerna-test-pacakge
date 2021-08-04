@@ -1,4 +1,4 @@
-import { SOME_CONST } from "../../shared/aarondm-test-common/src/import";
+import { SOME_CONST } from "aarondm-test-common/index";
 
 console.log("Major refactor");
 console.log("Testing without conventional commits");
