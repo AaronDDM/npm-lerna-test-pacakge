@@ -5,7 +5,7 @@ on:
     tags: ["v*"]
   pull_request:
     types: [opened, synchronize]
-    
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,19 +14,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Setup Node
-        uses: actions/setup-node@v2
+
+      - name: Set node version
+        uses: actions/setup-node@v1
         with:
-          node-version: "14"
-    - name: Install dependencies
-      run: yarn lerna bootstrap
-    - name: Build 
-      run: yarn lerna build
-    - name: Cache build
-      uses: actions/cache@v2
-      env:
-        cache-name: cache-build
-      id: cache-build
-      with:
-        path: ./*
-        key: ${{ github.sha }}
+          node-version: 14.16.0
+          registry-url: https://registry.npmjs.org/
+
+      - name: Install dependencies
+        run: yarn lerna bootstrap
+
+      - name: Build 
+        run: yarn lerna build
+        
+      - name: Cache build
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-build
+        id: cache-build
+        with:
+          path: ./*
+          key: ${{ github.sha }}
