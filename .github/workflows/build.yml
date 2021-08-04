@@ -22,10 +22,10 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: Install dependencies
-        run: yarn
+        run: npm install ci
 
       - name: Build 
-        run: yarn build
+        run: npm run build
         
       - name: Cache build
         uses: actions/cache@v2
