@@ -5,4 +5,8 @@
        "rootDir": "./src/",
        "outDir": "./dist/"
     },
+    "references": [
+        { "path": "../../shared/aarondm-test-common" }
+     ],
+     "include": ["src/**/*"]
 }
