@@ -1,9 +1,10 @@
 name: "Publish"
 
 on:
-  push:
-    tags:
-      - 'v*'
+  workflow_run:
+    workflows: ["Build & Test"]
+    tags: ["v*"]
+    types: [completed]
       
 jobs:
   publish-to-npm:
