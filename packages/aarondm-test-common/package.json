@@ -1,9 +1,18 @@
 {
-    "name": "aarondm-test-common",
-    "private": true,
-    "version": "2.0.2-canary.4",
-    "description": "",
-    "author": "",
-    "license": "ISC"
+  "name": "aarondm-test-common",
+  "private": true,
+  "version": "2.0.2-canary.8",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild index.ts --bundle --outfile=index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^16.4.11",
+    "aarondm-test-common": "latest",
+    "typescript": "^4.3.5"
   }
-  
+}
