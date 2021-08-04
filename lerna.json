@@ -1,6 +1,7 @@
 {
   "packages": [
-    "packages/*"
+    "packages/*",
+    "commons/*"
   ],
   "version": "2.0.2-canary.5",
   "preid": "canary",
