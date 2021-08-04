@@ -17,18 +17,9 @@
         "types": [
             "svelte",
             "jest",
-            "dom",
-            "cypress"
+            "dom"
         ],
         "baseUrl": ".",
-        "rootDirs": [
-            "packages", "commons"
-        ],
-        "paths": {
-            "@commons/*": [
-                "./commons/src/*"
-            ]
-        },
         "strict": true,
         "skipLibCheck": true,
         "resolveJsonModule": true
