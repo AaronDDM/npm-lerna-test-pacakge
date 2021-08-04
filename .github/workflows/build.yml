@@ -22,7 +22,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
 
       - name: Install dependencies
-        run: yarn lerna bootstrap
+        run: yarn
 
       - name: Build 
         run: yarn build
