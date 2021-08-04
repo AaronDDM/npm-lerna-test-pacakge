@@ -27,10 +27,6 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@users.noreply.github.com"
 
-      - name: Configure NPM
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
-
       - name: Publish (canary)
         run: |
           yarn run lerna publish from-git --dist-tag canary --canary --preid canary --yes
