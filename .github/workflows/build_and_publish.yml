@@ -44,6 +44,11 @@ jobs:
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/tags/v')
     steps:
+      - name: Check out source code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
       - name: Set node version
         uses: actions/setup-node@v1
         with:
@@ -55,11 +60,12 @@ jobs:
         with:
           path: ./*
           key: ${{ github.sha }}
-          
+
       - name: Configure Git CI User
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@users.noreply.github.com"
+          
       - name: Publish (canary)
         if: contains(github.ref, 'canary') == true
         run: |

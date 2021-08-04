@@ -1,4 +1,4 @@
-export const SOME_CONST = 'some  and some updated constant!!!!';
+export const SOME_CONST = 'common update';
 
 export function newFunction() {
     return 'update-test-3';
