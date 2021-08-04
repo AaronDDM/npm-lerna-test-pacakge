@@ -1,6 +1,6 @@
 {
   "name": "aarondm-test-package-1",
-  "version": "2.0.3-canary.3",
+  "version": "2.0.3-canary.4",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
