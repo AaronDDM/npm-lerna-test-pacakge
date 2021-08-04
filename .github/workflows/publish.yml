@@ -20,6 +20,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14.16.0
+          registry-url: https://registry.npmjs.org/
 
       - name: Configure Git CI User
         run: |
@@ -33,3 +34,5 @@ jobs:
       - name: Publish (canary)
         run: |
           yarn run lerna publish from-git --dist-tag canary --canary --preid canary --yes
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
