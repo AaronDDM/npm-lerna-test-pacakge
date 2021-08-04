@@ -10,8 +10,8 @@
   },
   "scripts": {
     "lerna": "lerna",
-    "release:canary": "lerna version --conventional-commits --conventional-prerelease",
-    "release:stable": "lerna version --conventional-commits --conventional-graduate --create-release github",
+    "release:canary": "lerna version --conventional-commits --conventional-prerelease --no-push",
+    "release:stable": "lerna version --conventional-commits --conventional-graduate --no-push",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
