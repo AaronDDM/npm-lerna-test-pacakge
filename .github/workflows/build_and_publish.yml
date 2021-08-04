@@ -63,13 +63,13 @@ jobs:
       - name: Publish (canary)
         if: contains(github.ref, 'canary') == true
         run: |
-          npm run lerna changed && npm run lerna publish from-git --no-verify-access --dist-tag canary --canary --preid canary --yes
+          npm run lerna -- changed && npm run lerna -- publish from-git --no-verify-access --dist-tag canary --canary --preid canary --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish (stable)
         if: contains(github.ref, 'canary') == false
         run: |
-          npm run lerna changed && npm run lerna publish from-git --no-verify-access --yes
+          npm run lerna -- changed && npm run lerna -- publish from-git --no-verify-access --yes
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} 
