@@ -1,6 +1,6 @@
 {
   "name": "aarondm-test-package-1",
-  "version": "2.0.2-canary.7",
+  "version": "2.0.2-canary.8",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^16.4.11",
-    "typescript": "^4.3.5",
-    "aarondm-test-common": "latest"
+    "aarondm-test-common": "latest",
+    "typescript": "^4.3.5"
   }
 }
