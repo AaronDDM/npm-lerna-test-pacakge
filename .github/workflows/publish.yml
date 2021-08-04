@@ -3,7 +3,8 @@ name: "Publish"
 on:
   workflow_run:
     workflows: ["Build & Test"]
-    tags: ["v*"]
+    push:
+      tags: ["v*"]
     types: [completed]
       
 jobs:
