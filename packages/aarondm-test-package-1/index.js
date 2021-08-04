@@ -1,6 +1,1 @@
-console.log("Test package that does not belong on the internet really")
-console.log("This is for 1.0.1-canary.0")
-console.log("This is for 1.0.1-canary.1")
-console.log("This is for 1.0.1-canary.2")
-console.log("This is for 1.0.1-canary.3")
-console.log("This is for 1.0.1-canary.4")
+console.log("Major refactor");
